@@ -23,6 +23,7 @@ router.get('/', async function(req, res, next) {
       data: JSON.parse(service.data)
     }
   })
+  res.setHeader('Content-Type', 'application/json');
   res.json(services)
 })
 
